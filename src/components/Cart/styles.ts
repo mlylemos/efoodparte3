@@ -144,10 +144,12 @@ export const Total = styled.div`
 export const ContinueButton = styled.button`
   background-color: #fff;
   color: #e66767;
-  font-weight: bold;
-  width: 100%;
+  font-size: 14px;
+  font-weight: 700;
+  height: 24px;
+  width: 344px;
+  line-height: 100%;
   padding: 12px;
-  border-radius: 4px;
   border: none;
   cursor: pointer;
 `

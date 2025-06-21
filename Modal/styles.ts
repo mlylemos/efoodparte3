@@ -17,7 +17,6 @@ export const Overlay = styled.div`
     background-color: #e66767;
     color: #fff;
     padding: 32px;
-    border-radius: 8px;
     max-width: 1024px;
     width: 100%;
     position: relative;
@@ -39,7 +38,6 @@ export const Overlay = styled.div`
     export const Img = styled.img`
     width: 280px;
     height: auto;
-    border-radius: 8px;
     `
 
     export const Content = styled.div`
@@ -65,6 +63,5 @@ export const Overlay = styled.div`
     padding: 8px 16px;
     font-weight: bold;
     cursor: pointer;
-    border-radius: 4px;
     margin-top: auto;
 `
