@@ -3,7 +3,7 @@ import styled from 'styled-components'
 export const StyledButton = styled.button`
   padding: 8px 16px;
   background-color: #e66767;
-  color: #fff;
+  color: #FFEBD9;
   border: none;
   cursor: pointer;
   align-self: flex-start;

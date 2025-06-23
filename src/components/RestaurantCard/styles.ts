@@ -86,8 +86,9 @@ export const Description = styled.p`
 export const Button = styled.button`
   margin-top: 8px;
   width: 82px;
+  height: 24px;
   background-color: #e66767;
-  color: #fff;
+  color: #FFEBD9;
   border: none;
   cursor: pointer;
   font-size: 14px;

@@ -25,6 +25,7 @@ export const Logo = styled.img`
   width: 125px;
   height: 57.5px;
   margin-bottom: 8px;
+  align-self: center;
 `
 
 export const Nav = styled.div`
@@ -35,7 +36,8 @@ export const Nav = styled.div`
 
 export const Cart = styled.div`
   color: #e66767;
-  font-size: 16px;
+  font-size: 18px;
+  font-weight: bold;
 `
 
 export const CenteredWrapper = styled.div`

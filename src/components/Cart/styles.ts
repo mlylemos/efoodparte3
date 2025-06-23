@@ -52,7 +52,7 @@ export const Overlay = styled.div`
 
 export const Sidebar = styled.aside`
   background-color: #e66767;
-  color: #fff;
+  color: #FFEBD9;
   width: 360px;
   height: 100vh;
   padding: 16px;
