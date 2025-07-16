@@ -44,24 +44,8 @@ export const Cuisine = styled.span`
 
 export const Title = styled.h2`
     color: #fff;
-<<<<<<< HEAD
     border: 0;
     font-size: 32px;
     font-weight: bold;
     margin: 0;
 `
-=======
-    font-family: 'Roboto', sans-serif;
-    font-weight: 700;
-    font-size: 32px;
-    line-height: 100%;
-    letter-spacing: 0;
-    position: absolute;
-    padding: 0 0 0 140px;
-    top: 210px;
-    left: 40px;
-    margin: 0;
-    text-shadow: 1px 1px 4px #000;
-    z-index: 2;
-`
->>>>>>> 7e17c07f530917be93461478d4cb0077e3b9edf4
