@@ -5,7 +5,6 @@ import { remove, toggleCart } from '../../store/reducers/carrinho'
 import { useEffect } from 'react'
 
 import * as S from './styles'
-import fechar from '../../assets/fechar.png'
 import cancelar from '../../assets/lixeira.png'
 
 const Cart = () => {
@@ -33,11 +32,9 @@ const Cart = () => {
 
     return (
         <S.CartContainer>
-            <S.Overlay />
-            <S.Sidebar>
-                <button className="fechar" onClick={() => dispatch(toggleCart())}>
-                    <img src={fechar} alt="Fechar carrinho" />
-                </button>
+            <S.Overlay onClick={() => dispatch(toggleCart())} />
+            
+            <S.Sidebar onClick={(e) => e.stopPropagation()}>
                 <ul>
                     {itens.map((item: Prato) => (
                         <li key={item.id}>
@@ -46,7 +43,9 @@ const Cart = () => {
                                 <h3>{item.nome}</h3>
                                 <span>R$ {item.preco.toFixed(2)}</span>
                             </div>
-                            <button className="cancelar" onClick={() => removeItem(item.id)}><img src={cancelar} alt="apagar item" /></button>
+                            <button className="cancelar" onClick={() => removeItem(item.id)}>
+                                <img src={cancelar} alt="apagar item" />
+                            </button>
                         </li>
                     ))}
                 </ul>

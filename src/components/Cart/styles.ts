@@ -53,23 +53,17 @@ export const Overlay = styled.div`
 export const Sidebar = styled.aside`
   background-color: #e66767;
   color: #FFEBD9;
+  font-family: 'Roboto', sans-serif;
   width: 360px;
-  height: 100vh;
-  padding: 16px;
+  height: 1624px;
+  padding: 8px;
+  padding-top: 32px;
   position: fixed;
   right: 0;
   top: 0;
   z-index: 1001;
   overflow-y: auto;
 
-  .close-icon {
-    width: 16px;
-    height: 16px;
-    margin-left: auto;
-    display: block;
-    cursor: pointer;
-    margin-bottom: 24px;
-  }
 
 ul {
   list-style: none;
@@ -77,53 +71,60 @@ ul {
   margin: 0;
 
   li {
-    background-color: #fff5f5;
+    background-color: #FFEBD9;
     color: #e66767;
     padding: 8px;
-    border-radius: 8px;
+    width: 344px;
+    height: 100px;
     display: flex;
     align-items: center;
     gap: 8px;
     margin-bottom: 16px;
-    position: relative; // ADICIONE ESTA LINHA
+    position: relative; 
 
     img {
-      width: 60px;
-      height: 60px;
+      width: 80px;
+      height: 80px;
       object-fit: cover;
-      border-radius: 4px;
     }
 
-    div {
-      flex: 1;
+  div {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  height: 100%;
 
-      h3 {
-        font-size: 14px;
-        font-weight: bold;
-        margin: 0;
-      }
+  h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 18px;
+    height: 21px;
+  }
 
-      span {
-        font-size: 14px;
-      }
-    }
+  span {
+    font-size: 14px;
+    font-weight: 400;
+    height: 22px;
+    width: 67px;
+  }
+}
 
     button.cancelar {
       position: absolute;
       bottom: 8px;
-      right: 8px;
+      right: 1px;
       background: none;
       border: none;
-      width: 32px;
-      height: 32px;
+      width: 16px;
+      height: 16px;
       display: flex;
       align-items: center;
       justify-content: center;
       cursor: pointer;
 
       img {
-        width: 20px;
-        height: 20px;
+        width: 18px;
+        height: 18px;
         object-fit: contain;
         display: block;
       }
@@ -136,13 +137,13 @@ ul {
 export const Total = styled.div`
   display: flex;
   justify-content: space-between;
-  font-weight: bold;
-  margin: 16px 0;
+  font-weight: 700;
+  margin: 35px 0 16px 0;
   font-size: 14px;
 `
 
 export const ContinueButton = styled.button`
-  background-color: #fff;
+  background-color: #FFEBD9;
   color: #e66767;
   font-size: 14px;
   font-weight: 700;
